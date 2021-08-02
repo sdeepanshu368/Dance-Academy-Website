@@ -1,0 +1,60 @@
+doctype html
+html
+  head
+    title Dance Academy
+    style
+      include ../static/style.css
+  
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/logo.png")
+            | HDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+    
+    section#introSection
+        div Welcome to the Dance Academy
+        div.small Let's Dance
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+            div.card-content
+                    p This is the best dance academy
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png")
+            div.card-content
+                    p This is the best dance academy
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.png")
+            div.card-content
+                    p This is the best dance academy
+
+    section#sponsorsSection
+        h2 Our Sponsor
+        div#sponsors
+            img(src="/static/img/logo1.png", alt="SponsorImage", class="spImage")
+            img(src="/static/img/logo2.png", alt="SponsorImage", class="spImage")
+            img(src="/static/img/logo3.png", alt="SponsorImage", class="spImage")
+            img(src="/static/img/logo4.png", alt="SponsorImage", class="spImage")
+        
+    footer#footer
+        | Copyright © 2021 DanceAcademy | All Rights Reserved
+    
+    script
+      include ../static/index.js
